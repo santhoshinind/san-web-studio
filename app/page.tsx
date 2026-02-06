@@ -28,12 +28,16 @@ export default function Home() {
 <header className="flex items-center justify-between px-12 py-8 border-b">
 
         <div className="flex items-center gap-3">
-          <img src="/sws logo.png" alt="San Web Studio Logo" className="h-24" />
-          <div className="flex flex-col leading-tight">
-            <span className="text-xl font-bold text-teal-700">
-              SAN WEB STUDIO
-            </span>
-            <span className="text-sm text-gray-600">
+  <img
+    src="/sws-logo.png"
+    alt="San Web Studio Logo"
+    className="h-24"
+  />
+  <div className="flex flex-col leading-tight">
+    <span className="text-xl font-bold text-teal-700">
+      SAN WEB STUDIO
+    </span>
+    <span className="text-sm text-gray-600">
               Innovative. Responsive. User-Friendly.
             </span>
           </div>
@@ -152,7 +156,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       {/* Project 1 */}
-      <div> className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-md transition"
+      <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-md transition">"
         
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           Tana Fashions
