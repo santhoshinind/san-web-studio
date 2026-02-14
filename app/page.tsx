@@ -25,31 +25,34 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <header className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-6 border-b gap-4">
-        <div className="flex items-center gap-3">
-          <img
-            src="/sws-logo.png"
-            alt="San Web Studio Logo"
-            className="h-24"
-          />
-          <div className="flex flex-col leading-tight">
-            <span className="text-xl font-bold text-teal-700">
-              SAN WEB STUDIO
-            </span>
-            <span className="text-sm text-gray-600">
-              Innovative. Responsive. User-Friendly.
-            </span>
-          </div>
-        </div>
+      <header className="flex items-center justify-between px-6 md:px-12 py-6 border-b">
 
-        <nav className="flex flex-col md:flex-row items-center gap-4 md:gap-10 text-gray-700 text-sm md:text-base font-medium">
-          <a href="#home" className="hover:text-teal-700 transition">Home</a>
-          <a href="#about" className="hover:text-teal-700 transition">About</a>
-          <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
-          <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
-        </nav>
-      </header>
+  {/* Logo */}
+  <div className="flex items-center gap-3">
+    <img
+      src="/sws-logo.png"
+      alt="San Web Studio Logo"
+      className="h-14 md:h-20"
+    />
+    <div className="hidden sm:flex flex-col leading-tight">
+      <span className="text-lg md:text-xl font-bold text-teal-700">
+        SAN WEB STUDIO
+      </span>
+      <span className="text-xs md:text-sm text-gray-600">
+        Innovative. Responsive. User-Friendly.
+      </span>
+    </div>
+  </div>
 
+  {/* Navigation */}
+  <nav className="flex items-center gap-4 md:gap-10 text-sm md:text-base font-medium text-gray-700">
+    <a href="#home" className="hover:text-teal-700 transition">Home</a>
+    <a href="#about" className="hover:text-teal-700 transition">About</a>
+    <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
+    <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
+  </nav>
+
+</header>
       {/* Hero Section */}
       <section
         id="home"
