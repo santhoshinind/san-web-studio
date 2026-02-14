@@ -34,7 +34,7 @@ export default function Home() {
       alt="San Web Studio Logo"
       className="h-14 md:h-20"
     />
-    <div className="hidden sm:flex flex-col leading-tight">
+    <div className="flex flex-col leading-tight">
       <span className="text-lg md:text-xl font-bold text-teal-700">
         SAN WEB STUDIO
       </span>
