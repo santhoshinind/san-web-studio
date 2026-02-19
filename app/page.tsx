@@ -25,35 +25,39 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <header className="flex items-center justify-between px-6 md:px-12 py-6 border-b">
+<header className="sticky top-0 bg-white z-50 border-b">
 
-  {/* Logo */}
-  <div className="flex items-center gap-3">
-    <img
-      src="/sws-logo.png"
-      alt="San Web Studio Logo"
-      className="h-14 md:h-20"
-    />
-    <div className="flex flex-col leading-tight">
-      <span className="text-lg md:text-xl font-bold text-teal-700">
-        SAN WEB STUDIO
-      </span>
-      <span className="text-xs md:text-sm text-gray-600">
-        Innovative. Responsive. User-Friendly.
-      </span>
+  {/* Top Row - Logo + Brand */}
+  <div className="flex items-center justify-between px-6 md:px-12 py-4">
+    <div className="flex items-center gap-4">
+      <img
+        src="/sws-logo.png"
+        alt="San Web Studio Logo"
+        className="h-14 md:h-20"
+      />
+
+      <div>
+        <h1 className="text-lg md:text-xl font-bold text-teal-700">
+          SAN WEB STUDIO
+        </h1>
+        <p className="text-xs md:text-sm text-gray-600">
+          Innovative. Responsive. User-Friendly.
+        </p>
+      </div>
     </div>
   </div>
 
-  {/* Navigation */}
-  <nav className="flex items-center gap-4 md:gap-10 text-sm md:text-base font-medium text-gray-700">
-    <a href="#home" className="hover:text-teal-700 transition">Home</a>
-    <a href="#about" className="hover:text-teal-700 transition">About</a>
-    <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
-    <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
-  </nav>
+  {/* Bottom Row - Navigation */}
+  <div className="border-t">
+    <nav className="flex justify-center gap-8 py-3 text-gray-700 font-medium text-sm md:text-base">
+      <a href="#home" className="hover:text-teal-700 transition">Home</a>
+      <a href="#about" className="hover:text-teal-700 transition">About</a>
+      <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
+      <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
+    </nav>
+  </div>
 
-</header>
-      {/* Hero Section */}
+</header>      {/* Hero Section */}
       <section
         id="home"
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
