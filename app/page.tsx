@@ -106,10 +106,10 @@ export default function Home() {
         {/* Right Image */}
         <div>
           <img
-            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36"
-            alt="Office workspace"
-            className="rounded-lg shadow-lg w-full object-cover"
-          />
+  src="/hero.jpg"
+  alt="Modern tech workspace"
+  className="rounded-lg shadow-lg w-full object-cover"
+/>
         </div>
       </section>
 
