@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -105,9 +106,11 @@ export default function Home() {
 
         {/* Right Image */}
         <div>
-          <img
+          <Image
   src="/hero.jpg"
   alt="Modern tech workspace"
+  width={800}
+  height={500}
   className="rounded-lg shadow-lg w-full object-cover"
 />
         </div>
