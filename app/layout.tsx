@@ -12,13 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "San Web Studio",
-  description: "Professional Website Design & Development",verification: {
-    google: "B3yZWUBmZKxrS4e9AzV4Mz_0X6c5FulWy0D14tvW2d0",
+  description: "Freelance web designer creating clean websites and intelligent automation for modern brands.",
+  icons: {
+    icon: "/favicon.ico",
   },
-}
-;
+};
 
 export default function RootLayout({
   children,
