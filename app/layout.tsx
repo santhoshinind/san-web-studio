@@ -12,14 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://sanwebstudio.com"),
   title: "San Web Studio",
-  description: "Freelance web designer creating clean websites and intelligent automation for modern brands.",
+  description:
+    "Freelance web designer creating clean websites and intelligent automation for modern brands.",
   icons: {
     icon: "/favicon.ico",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
