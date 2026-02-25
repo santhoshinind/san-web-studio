@@ -14,24 +14,68 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sanwebstudio.com"),
-  title: "San Web Studio",
+
+  title: {
+    default: "San Web Studio | Freelance Web Designer in Bangalore",
+    template: "%s | San Web Studio",
+  },
+
   description:
-    "Freelance web designer creating clean websites and intelligent automation for modern brands.",
+    "Freelance Web Designer in Bangalore specializing in AI automation, modern responsive websites, and intelligent digital solutions for businesses.",
+
+  keywords: [
+    "Freelance Web Designer in Bangalore",
+    "Website Developer Bangalore",
+    "AI Automation Services Bangalore",
+    "Modern Business Websites",
+    "San Web Studio"
+  ],
+
+  authors: [{ name: "San Web Studio" }],
+  creator: "San Web Studio",
+
   icons: {
     icon: "/favicon.ico",
+  },
+
+  alternates: {
+    canonical: "https://sanwebstudio.com",
+  },
+
+  openGraph: {
+    title: "San Web Studio | Freelance Web Designer in Bangalore",
+    description:
+      "Modern websites powered by smart automation. Helping businesses grow with clean design and AI workflows.",
+    url: "https://sanwebstudio.com",
+    siteName: "San Web Studio",
+    locale: "en_IN",
+    type: "website",
   },
 };
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "San Web Studio",
+              url: "https://sanwebstudio.com",
+              logo: "https://sanwebstudio.com/sws-logo.png",
+            }),
+          }}
+        />
       </body>
     </html>
   );
