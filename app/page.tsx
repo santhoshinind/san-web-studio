@@ -26,39 +26,40 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-<header className="sticky top-0 bg-white z-50 border-b">
+      <header className="sticky top-0 bg-white z-50 border-b">
 
-  {/* Top Row - Logo + Brand */}
-  <div className="flex items-center justify-between px-6 md:px-12 py-4">
-    <div className="flex items-center gap-4">
-      <img
-        src="/sws-logo.png"
-        alt="San Web Studio Logo"
-        className="h-14 md:h-20"
-      />
+        {/* Top Row - Logo + Brand */}
+        <div className="flex items-center justify-between px-6 md:px-12 py-4">
+          <div className="flex items-center gap-4">
+            <img
+              src="/sws-logo.png"
+              alt="San Web Studio Logo"
+              className="h-14 md:h-20"
+            />
 
-      <div>
-        <h1 className="text-lg md:text-xl font-bold text-teal-700">
-          SAN WEB STUDIO
-        </h1>
-        <p className="text-xs md:text-sm text-gray-600">
-          Innovative. Responsive. User-Friendly.
-        </p>
-      </div>
-    </div>
-  </div>
+            <div>
+              <h1 className="text-lg md:text-xl font-bold text-teal-700">
+                SAN WEB STUDIO
+              </h1>
+              <p className="text-xs md:text-sm text-gray-600">
+                Innovative. Responsive. User-Friendly.
+              </p>
+            </div>
+          </div>
+        </div>
 
-  {/* Bottom Row - Navigation */}
-  <div className="border-t">
-    <nav className="flex justify-center gap-8 py-3 text-gray-700 font-medium text-sm md:text-base">
-      <a href="#home" className="hover:text-teal-700 transition">Home</a>
-      <a href="#about" className="hover:text-teal-700 transition">About</a>
-      <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
-      <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
-    </nav>
-  </div>
+        {/* Bottom Row - Navigation */}
+        <div className="border-t">
+          <nav className="flex justify-center gap-8 py-3 text-gray-700 font-medium text-sm md:text-base">
+            <a href="#home" className="hover:text-teal-700 transition">Home</a>
+            <a href="#about" className="hover:text-teal-700 transition">About</a>
+            <a href="#projects" className="hover:text-teal-700 transition">Projects</a>
+            <a href="#testimonials" className="hover:text-teal-700 transition">Testimonials</a>
+            <a href="#contact" className="hover:text-teal-700 transition">Contact</a>
+          </nav>
+        </div>
 
-</header>      {/* Hero Section */}
+      </header>      {/* Hero Section */}
       <section
         id="home"
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
@@ -107,12 +108,12 @@ export default function Home() {
         {/* Right Image */}
         <div>
           <Image
-  src="/hero.jpg"
-  alt="Modern tech workspace"
-  width={800}
-  height={500}
-  className="rounded-lg shadow-lg w-full object-cover"
-/>
+            src="/hero.jpg"
+            alt="Modern tech workspace"
+            width={800}
+            height={500}
+            className="rounded-lg shadow-lg w-full object-cover"
+          />
         </div>
       </section>
 
@@ -143,9 +144,10 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Projects Section */}
       <section id="projects" className="px-6 md:px-10 py-16 md:py-20 bg-white">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6">
             Projects
           </h2>
@@ -154,6 +156,34 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
+            <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Vephil.com
+              </h3>
+              <span className="inline-block mb-4 text-sm text-teal-700 font-medium">
+                Client Project
+              </span>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                A professional business website developed for Vephil to reflect
+                their vision, business model, and digital presence with a clean,
+                responsive, and modern design.
+              </p>
+              <p className="text-sm text-gray-500 mb-4">
+                <strong>Work done:</strong> Website design, structured layout,
+                responsive sections, content presentation, and client-requested
+                modifications.
+              </p>
+              <a
+                href="https://vephil.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-teal-700 font-medium hover:underline"
+              >
+                View Project →
+              </a>
+            </div>
+
+            {/* Project 2 */}
             <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-md transition">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Tana Fashions
@@ -167,8 +197,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Project 2 */}
-            <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            {/* Project 3 */}
+            <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 md:col-span-2">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 CateresIndia
               </h3>
@@ -183,11 +213,65 @@ export default function Home() {
           </div>
 
           <p className="mt-10 text-center text-gray-500">
-            And many more projects coming soon...
+            More client projects coming soon...
           </p>
         </div>
       </section>
+      {/* Testimonials Section */}
+      <section
+        id="testimonials"
+        className="fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
+      >
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6 text-center">
+            Client Testimonial
+          </h2>
 
+          <div className="w-20 h-1 bg-teal-700 mx-auto mb-12"></div>
+
+          <div className="bg-white rounded-xl shadow-md p-8 md:p-10 border">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              “We are extremely pleased with the website development services
+              provided by San Web Studio. The entire experience has been smooth,
+              professional, and highly satisfying.”
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              “Despite being a freelancer, the developer delivered a fantastic
+              website for Vephil.com that truly reflects our vision and business
+              model. The quality of work is excellent and offers great value for
+              money.”
+            </p>
+
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                What impressed them most:
+              </h3>
+
+              <ul className="space-y-3 text-gray-700">
+                <li>• Timely delivery within a short period</li>
+                <li>• Very cost-effective pricing</li>
+                <li>• Continuous updates throughout the development process</li>
+                <li>• Flexibility in making modifications whenever required</li>
+              </ul>
+            </div>
+
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              “The developer ensured complete transparency and was always responsive
+              to our requirements.”
+            </p>
+
+            <p className="text-lg text-gray-700 leading-relaxed font-medium">
+              “We highly recommend San Web Studio to anyone looking for reliable,
+              affordable, and high-quality web development services.”
+            </p>
+
+            <p className="mt-8 text-right text-teal-800 font-semibold text-lg">
+              — Team Vephil
+            </p>
+          </div>
+        </div>
+      </section>
       {/* Contact Section */}
       <section className="fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20" id="contact">
         <div className="max-w-4xl mx-auto text-center">
