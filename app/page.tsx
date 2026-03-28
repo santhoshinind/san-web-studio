@@ -65,7 +65,6 @@ export default function Home() {
   id="home"
         className="scroll-mt-32 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
       >
-      >
         {/* Left Content */}
         <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-teal-800 leading-tight">
@@ -120,7 +119,10 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20">
+      <section
+        id="about"
+        className="scroll-mt-32 fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
+      >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6">
             About Me
