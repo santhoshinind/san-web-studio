@@ -61,8 +61,10 @@ export default function Home() {
 
       </header>      {/* Hero Section */}
       <section
-        id="home"
-        className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
+        <section
+  id="home"
+        className="scroll-mt-32 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
+      >
       >
         {/* Left Content */}
         <div>
