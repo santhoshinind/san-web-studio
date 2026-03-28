@@ -191,12 +191,20 @@ export default function Home() {
               <span className="inline-block mb-4 text-sm text-teal-700 font-medium">
                 Completed Project
               </span>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 A modern fashion website designed with a clean layout and responsive
                 design to showcase products and strengthen online presence.
               </p>
-            </div>
 
+              <a
+                href="https://tanafashions.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-teal-700 font-medium hover:underline"
+              >
+                View Project →
+              </a>
+            </div>
             {/* Project 3 */}
             <div className="fade-up border rounded-lg p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 md:col-span-2">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
