@@ -61,9 +61,9 @@ export default function Home() {
 
       </header>      {/* Hero Section */}
       <section
-        <section
-  id="home"
-        className="scroll-mt-32 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 py-16 md:py-20 items-center"
+
+        id="home"
+        className="scroll-mt-48 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-10 pt-24 pb-16 md:pt-28 md:pb-20 items-center"
       >
         {/* Left Content */}
         <div>
@@ -121,7 +121,7 @@ export default function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="scroll-mt-32 fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
+        className="scroll-mt-48 fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
       >
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6">
@@ -150,7 +150,10 @@ export default function Home() {
 
 
       {/* Projects Section */}
-      <section id="projects" className="px-6 md:px-10 py-16 md:py-20 bg-white">
+      <section
+        id="projects"
+        className="scroll-mt-48 px-6 md:px-10 py-16 md:py-20 bg-white"
+      >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6">
             Projects
@@ -232,7 +235,7 @@ export default function Home() {
       {/* Testimonials Section */}
       <section
         id="testimonials"
-        className="fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
+        className="scroll-mt-48 fade-up bg-zinc-50 px-6 md:px-10 py-16 md:py-20"
       >
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-teal-800 mb-6 text-center">
